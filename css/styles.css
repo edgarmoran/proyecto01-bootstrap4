@@ -1,0 +1,232 @@
+body{
+    background-color: #f0f0f0;
+}
+.encabeado {
+    font-size: 2.4rem;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+    line-height: 2.4rem;
+}
+.encabezado span{
+    font-size: 4rem;
+    font-family: 'Italianno', cursive;
+    color:#e082a8;
+
+}
+
+/*** MENU REDES SOCIALES ***/
+
+.sociales ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.sociales ul li{
+    position: relative;
+    display: inline-block;
+}
+.sociales ul li a::before{
+    font-family: 'FontAwesome';
+    display: inline-block;
+    vertical-align: top;
+    padding: 0.4rem;
+    content: '\f08e';
+    -webkit-font-smothing: antialiased;
+    font-size: 2rem;
+    color: #e082a8;
+}
+.sociales ul li a[href*="facebook.com"]::before{
+    content: '\f230';
+}
+.sociales a[href*="twitter.com"]::before{
+    content: '\f081';
+}
+.sociales ul li a[href*="instagram.com"]::before{
+    content: "\f16d";
+}
+.sociales a[href*="pinterest.com"]::before{
+    content: "\f0d2";
+}
+.sociales ul li a[href*="youtube.com"]::before{
+    content: "\f16a";
+}
+
+/*** NAVEGACION *****/
+
+.navegacion{
+    background-color: #8ed3cc;
+}
+.nav-principal{
+    background-image: url(../img/border_horizontal.png),
+                        url(../img/border_horizontal.png);
+    background-repeat: repeat-x;
+    background-position: 0px top, 0px bottom;
+}
+
+.navbar-light .navbar-toggler{
+    background-color: #fff;
+}
+.navbar-light .navbar-brand,
+.navbar-light .navbar-brand:hover{
+    color: #fff;
+}
+.nav-link{
+    color: #fff;
+    font-size: 1.4rem; 
+    transition: all .5s ease-in-out; 
+    font-family: 'Raleway', sans-serif;
+}
+.nav-link:hover{
+    border-radius: .4rem;
+    background-color: #e082a8;
+    color: #000;
+}
+
+
+/**** Carousel *****/
+
+.carousel-caption h3{
+    font-family: 'Raleway', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+    text-shadow: 2px 2px 2px  #e082a8;
+}
+
+/**** NUEVO SITIO ****/
+
+.nuevo-sitio p{
+    font-family: 'Lato', sans-serif;
+    color: #979797;
+    font-size: 1.5rem;
+}
+
+
+/***** SERVICIOS ****/
+
+.imagen-servicio img{
+    border: 6px solid #fff;
+    -webkit-transition: transform .3s ease;
+    -ms-transition: transform .3s ease;
+    transition: transform .3s ease;
+
+}
+
+.imagen-servicio img:hover{
+    -webkit-transform: scale(1.2) rotate(5deg);
+    -ms-transform: scale(1.2) rotate(5deg);
+    transform: scale(1.2) rotate(5deg);
+}
+
+.servicio-info{
+    background-color: #fff;
+    margin-top: -5rem;
+}
+
+.servicio-info .btn-primary{
+    border-radius: 0;
+    background-color: #e082a8;
+    border: none;
+}
+
+/***** HORARIOS *****/
+
+.horario{
+    background-color: #8ed3cc;
+    color: #fff;
+}
+
+.horario h2{
+    font-size: 2.2rem;
+    font-family: 'Lato';
+}
+
+.horario .table{
+    border: 2px solid #e082a8;
+}
+
+.horario .table thead{
+    background-color: #e082a8;
+}
+.horario .table td,
+.horario .table thead th{
+    border:none;
+}
+
+.horario .table tbody tr td{
+    padding: .35rem;
+    font-family: 'Lato';
+    font-size: 1.2rem;
+}
+
+.bg-horario{
+    background-image: url(../img/bg_horarios.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 400px;
+}
+
+
+/***** PRODUCTOS ******/
+.productos .card{
+    border: none;
+}
+.productos .card a{
+    color: #000;
+
+}
+.productos .card a:hover{
+    text-decoration: none;
+}
+.productos .card h3{
+    color: #e082a8;
+    font-size: 1.2rem;
+    font-family: 'Lato';
+}
+
+.productos .card p{
+    font-size: .8rem;
+}
+
+.productos .card .precio{
+    font-size: 1.6rem;
+    color:#979797;
+}
+
+/**** REALIZAR UNA CITA ******/
+
+.citas {
+    background-image: url(../img/bg_citas.jpg);
+    background-repeat: no-repeat;
+    background-position: center center;   
+    background-attachment: fixed;
+    color: #fff;
+}
+
+.citas h3{
+    font-size: 3.5rem;
+    font-family: 'Lato';
+}
+
+.citas p{
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+}
+
+.citas .btn-primary{
+    background-color: #8ed3cc;
+    border: 0;
+    padding: 1rem 5rem;
+    border-radius: 0;
+    font-family: 'Lato';
+    font-size: 1.3rem;
+}
+
+
+@media (min-width: 992px){
+    .citas{
+        background-size: cover;
+    }
+}
