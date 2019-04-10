@@ -83,6 +83,10 @@ body{
     color: #000;
 }
 
+.active{
+    background-color: #e082a8;
+    border-radius: .4rem;    
+}
 
 /**** Carousel *****/
 
@@ -128,7 +132,9 @@ body{
     border-radius: 0;
     background-color: #e082a8;
     border: none;
+    text-align: center;
 }
+
 
 /***** HORARIOS *****/
 
@@ -215,13 +221,16 @@ body{
     line-height: 1.6rem;
 }
 
-.citas .btn-primary{
+.btn-primary{
     background-color: #8ed3cc;
     border: 0;
     padding: 1rem 5rem;
     border-radius: 0;
     font-family: 'Lato';
     font-size: 1.3rem;
+}
+.btn-primary:hover{
+    background-color: #52b4aa;
 }
 
 
@@ -293,6 +302,14 @@ aside{
 
 .cupon .display-4{
     font-size: 2.5rem;
+}
+
+
+/***** FORMULARIO CONTACTO ******/
+.formularioContacto{
+    border: 2px solid #9a9a9a;
+    background-color: #fff;
+    
 }
 
 
